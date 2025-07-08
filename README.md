@@ -72,16 +72,18 @@ These DAX measures helped create a more interactive and insightful weather dashb
 The dataset used in this project was created by combining weather data for six Indian cities:  
 **Ajmer, Bangalore, Mumbai, Hyderabad, Lucknow, and Noida**, using WeatherAPI.
 
-- Each city's data was fetched using the same API endpoint structure.
-- These individual responses were merged into a single **`MasterTable.csv`** file.
+- The initial dataset was pulled from the **WeatherAPI** using the **Web connector** in Power BI for the city of **Ajmer**.
+- This dataset served as the base to understand the API structure and weather metrics.
+- After confirming the schema, **Power Query functions and parameters** were used to dynamically fetch weather data for other cities directly in Power BI.
+- These individual responses were merged into a single **`Weather_MasterTable.csv`** file.
 - This master dataset contains all current and forecast weather details for each city.
-- From this `MasterTable.csv, the following datasets were created within Power BI (via Power Query):
+- From this `Weather_MasterTable.csv`, the following datasets were created within Power BI (via Power Query):
   - `Current` – Current weather data per city
   - `Forecast_Day` – Daily forecasts
   - `Forecast_Hour` – Hourly forecasts
   - `Locations` – Metadata for each location
 
-Only `MasterTable.csv` is included in this repository to avoid redundancy.  
+Only `Weather_MasterTable.csv` is included in this repository to avoid redundancy.  
 All other tables were created within Power BI using **Power Query** and **DAX**.
 
 ---
