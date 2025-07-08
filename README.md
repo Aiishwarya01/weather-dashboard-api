@@ -15,6 +15,27 @@ This project showcases a real-time weather dashboard built in **Power BI**, usin
   - Pressure, Visibility, Cloud Cover, etc.
 
 ---
+## 🧠 Insights
+The dashboard offers visibility into:
+- Current weather conditions at a glance
+- Temperature trend over time
+- Humidity and comfort index
+- Wind speed & direction monitoring
+- Pressure & storm indicators
+- Visibility conditions
+- Cloud cover & weather type
+- Multi-city comparison 
+- Real-time weather alerts
+
+
+---
+## ⚙️ Tools & Technologies
+- Power BI Desktop
+- API Integration (`Web` connector)
+- Data Modeling
+- DAX for calculations 
+  
+---
 ## 🔗 Live Data Source
 - **API Provider**: [WeatherAPI.com](https://www.weatherapi.com/)] 
 - **Method**: URL imported into Power BI using `Web` connector
@@ -23,23 +44,23 @@ This project showcases a real-time weather dashboard built in **Power BI**, usin
 ---
 ## 🖼️ Dashboard Preview
 
-![Dashboard Screenshot]
-
-## ⚙️ Tools & Technologies
-- Power BI Desktop
-- API Integration (`Web` connector)
-- Data Modeling
-- DAX for calculations (if used)
+![Dashboard Screenshot]()
 
 ---
-## 🧠 Insights
-The dashboard helps track and compare:
-- Current vs Historical Conditions (if history is stored)
-- Multi-location monitoring (if supported)
-- Weather condition patterns
-
----
-## 📁 Files Included
+## 📂 Project Structure
+```
+Weather-Dashboard/
+│
+├── WeatherAPI.pbix
+├── README.md
+├── Dataset Info.txt
+├── Datasets/
+│   ├── Bangalore_Weather.csv
+│   ├── Mumbai_Weather.csv
+│   ├── Aggregated_Temp_Humidity.csv
+├── Images/
+│   └── dashboard-overview.png
+```
 
 ---
 ## 📬 Contact
