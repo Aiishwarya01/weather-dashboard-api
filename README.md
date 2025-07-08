@@ -99,13 +99,8 @@ Weather-Dashboard/
 │
 ├── WeatherAPI.pbix
 ├── README.md
-├── Dataset Info.txt
 ├── Datasets/
-│ ├── current.csv
-│ ├── forecast_hour.csv
-│ ├── forecast_day.csv
-│ ├── locations.csv
-│ ├── master_table.csv
+│ ├── Weather_MasterTable.csv
 ├── Images/
 │ └── dashboard.png
 ```
