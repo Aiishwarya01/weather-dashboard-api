@@ -4,32 +4,42 @@ This project showcases a real-time weather dashboard built in **Power BI**, usin
 
 ---
 ## 📌 Overview
-- Built using **Power BI Desktop**
-- Data Source: Live API endpoint (weather data)
-- Method: Web connection (`Get Data > Web`)
-- Displays real-time metrics such as:
-  - Temperature
-  - Humidity
-  - Wind Speed
-  - Weather Description
-  - Pressure, Visibility, Cloud Cover, etc.
+
+This project demonstrates the use of **Power BI** to visualize **real-time weather data** by connecting to a live weather API via the web connector.
+
+The dataset includes key atmospheric metrics such as:
+- **Temperature (°C)**
+- **Humidity (%)**
+- **Wind Speed (km/h)**
+- **Pressure (hPa)**
+- **Visibility (km)**
+- **Cloud Cover (%)**
+- **Weather Description** (e.g., Clear, Rainy, Cloudy)
+
+The dashboard connects to a live API and can be refreshed to display the most recent weather conditions automatically.  
+It monitors **real-time weather in 6 selected Indian cities**, making it valuable for localized weather tracking.
+
+> **Cities included**: Bangalore, Mumbai, Hyderabad, Lucknow, Ajmer, and Noida.
+
+This dashboard is particularly useful for industries such as **travel, agriculture, logistics**, and **city planning**, where real-time weather insights are crucial for operations and decision-making.
 
 ---
 ## 🧠 Insights
-The dashboard offers visibility into:
-- Current weather conditions at a glance
-- Temperature trend over time
-- Humidity and comfort index
-- Wind speed & direction monitoring
-- Pressure & storm indicators
-- Visibility conditions
-- Cloud cover & weather type
-- Multi-city comparison 
-- Real-time weather alerts
 
+The dashboard offers visibility into:
+- Current weather conditions at a glance  
+- Temperature trend over time  
+- Humidity and comfort index  
+- Wind speed & direction monitoring  
+- Pressure & storm indicators  
+- Visibility conditions  
+- Cloud cover & weather type  
+- Multi-city comparison  
+- Real-time weather alerts  
 
 ---
 ## ⚙️ Tools & Technologies
+
 - Power BI Desktop
 - API Integration (`Web` connector)
 - Data Modeling
@@ -37,6 +47,7 @@ The dashboard offers visibility into:
   
 ---
 ## 🔗 Live Data Source
+
 - **API Provider**: [WeatherAPI.com](https://www.weatherapi.com/)] 
 - **Method**: URL imported into Power BI using `Web` connector
 - **Refresh**: Manual or Scheduled refresh available via Power BI Service
@@ -44,7 +55,8 @@ The dashboard offers visibility into:
 ---
 ## 🖼️ Dashboard Preview
 
-![Dashboard Screenshot]()
+![Dashboard](images/dashboard.png)
+
 
 ---
 ## 📂 Project Structure
@@ -55,11 +67,13 @@ Weather-Dashboard/
 ├── README.md
 ├── Dataset Info.txt
 ├── Datasets/
-│   ├── Bangalore_Weather.csv
-│   ├── Mumbai_Weather.csv
-│   ├── Aggregated_Temp_Humidity.csv
+│ ├── current.csv
+│ ├── forecast_hour.csv
+│ ├── forecast_day.csv
+│ ├── locations.csv
+│ ├── master_table.csv
 ├── Images/
-│   └── dashboard-overview.png
+│ └── dashboard.png
 ```
 
 ---
