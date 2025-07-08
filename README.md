@@ -40,17 +40,49 @@ The dashboard offers visibility into:
 ---
 ## ⚙️ Tools & Technologies
 
-- Power BI Desktop
-- API Integration (`Web` connector)
-- Data Modeling
-- DAX for calculations 
-  
+- Power BI Desktop  
+- API Integration (`Web` connector)  
+- Data Modeling using Power Query  
+- Custom Measures and KPIs using **DAX (Data Analysis Expressions)**
+
+---
+## 🧮 DAX Measures Used
+
+Custom measures were created using **DAX** to calculate key metrics and apply dynamic visuals. These include:
+
+- **AQI Status & Suggestions** – Text indicators and health messages based on Air Quality Index  
+- **Pollutant Colors (CO, NO2, O3, PM10, PM2.5, SO2)** – Color-coded measures for easy visualization of pollutant levels  
+- **Temperature Measures** – Current and forecasted temperatures for comparison  
+- **Visibility & Wind Speed** – Environmental conditions per city  
+- **Last Updated Time** – Display of latest refresh timestamp  
+- **Custom KPIs & Max Values** – Used to drive slicers, cards, and conditional logic in visuals  
+
+These DAX measures helped create a more interactive and insightful weather dashboard.
+
 ---
 ## 🔗 Live Data Source
 
 - **API Provider**: [WeatherAPI.com](https://www.weatherapi.com/)] 
 - **Method**: URL imported into Power BI using `Web` connector
 - **Refresh**: Manual or Scheduled refresh available via Power BI Service
+
+---
+## 📦 Dataset Construction
+
+The dataset used in this project was created by combining weather data for six Indian cities:  
+**Ajmer, Bangalore, Mumbai, Hyderabad, Lucknow, and Noida**, using WeatherAPI.
+
+- Each city's data was fetched using the same API endpoint structure.
+- These individual responses were merged into a single **`MasterTable.csv`** file.
+- This master dataset contains all current and forecast weather details for each city.
+- From this `MasterTable.csv, the following datasets were created within Power BI (via Power Query):
+  - `Current` – Current weather data per city
+  - `Forecast_Day` – Daily forecasts
+  - `Forecast_Hour` – Hourly forecasts
+  - `Locations` – Metadata for each location
+
+Only `MasterTable.csv` is included in this repository to avoid redundancy.  
+All other tables were created within Power BI using **Power Query** and **DAX**.
 
 ---
 ## 🖼️ Dashboard Preview
